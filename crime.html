@@ -52,7 +52,7 @@ padding:25px 0;
 
 .header-inner{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -74,6 +74,7 @@ letter-spacing:4px;
 }
 
 
+
 .subtitle{
 
 font-size:13px;
@@ -87,6 +88,7 @@ margin-top:8px;
 
 
 
+
 nav{
 
 background:#3b4a5a;
@@ -94,9 +96,10 @@ background:#3b4a5a;
 }
 
 
+
 .nav-inner{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -129,15 +132,128 @@ background:#596d82;
 
 
 
+
 .container{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
 margin:25px auto;
 
+display:flex;
+
+gap:20px;
+
 }
+
+
+
+
+
+.side{
+
+width:260px;
+
+background:white;
+
+border:1px solid #ccc;
+
+flex-shrink:0;
+
+}
+
+
+
+
+
+.side-title{
+
+background:#f2f2f2;
+
+padding:12px;
+
+font-weight:bold;
+
+font-size:16px;
+
+border-bottom:1px solid #ccc;
+
+}
+
+
+
+
+
+.side ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+
+
+
+
+.side li{
+
+padding:14px;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+
+
+
+.side li a{
+
+color:#0066cc;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+
+.side li a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+
+.small{
+
+font-size:12px;
+
+color:#888;
+
+line-height:1.5;
+
+margin-top:5px;
+
+}
+
+
+
+
+
+.main{
+
+flex:1;
+
+}
+
+
 
 
 
@@ -158,15 +274,16 @@ margin-bottom:18px;
 
 background:#f2f2f2;
 
-border-bottom:1px solid #ccc;
-
 padding:12px;
+
+border-bottom:1px solid #ccc;
 
 font-size:16px;
 
 font-weight:bold;
 
 }
+
 
 
 
@@ -181,17 +298,20 @@ border-collapse:collapse;
 
 
 
+
+
 th{
 
 background:#fafafa;
 
-border-bottom:1px solid #ddd;
-
 padding:10px;
+
+border-bottom:1px solid #ddd;
 
 text-align:left;
 
 }
+
 
 
 
@@ -205,6 +325,7 @@ border-bottom:1px solid #eee;
 
 
 
+
 a{
 
 color:#0066cc;
@@ -212,6 +333,7 @@ color:#0066cc;
 text-decoration:none;
 
 }
+
 
 
 a:hover{
@@ -222,19 +344,26 @@ text-decoration:underline;
 
 
 
-.small{
+
+.status{
 
 font-size:12px;
 
-color:#888;
+padding:3px 8px;
+
+background:#eee;
+
+color:#666;
 
 }
 
 
 
+
+
 footer{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -253,8 +382,8 @@ border-top:1px solid #ccc;
 }
 
 
-</style>
 
+</style>
 
 </head>
 
@@ -269,12 +398,16 @@ border-top:1px solid #ccc;
 
 
 <div class="logo">
+
 刑案觀察站
+
 </div>
 
 
 <div class="subtitle">
+
 Case Watch ｜ 民間案件討論平台
+
 </div>
 
 
@@ -286,6 +419,7 @@ Case Watch ｜ 民間案件討論平台
 
 
 
+
 <nav>
 
 
@@ -293,22 +427,30 @@ Case Watch ｜ 民間案件討論平台
 
 
 <a href="index.html">
+
 首頁
+
 </a>
 
 
 <a href="forum.html">
+
 討論區
+
 </a>
 
 
 <a href="archive.html">
+
 案件整理
+
 </a>
 
 
 <a href="member.html">
+
 會員中心
+
 </a>
 
 
@@ -316,6 +458,203 @@ Case Watch ｜ 民間案件討論平台
 
 
 </nav>
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="side">
+
+
+<div class="side-title">
+
+版面分類
+
+</div>
+
+
+
+<ul>
+
+
+<li>
+
+<a href="unsolved.html">
+
+未解案件
+
+</a>
+
+<div class="small">
+
+失蹤案件、懸案與長期未破案件整理
+
+</div>
+
+</li>
+
+
+
+
+<li>
+
+<a href="crime.html">
+
+重大刑案
+
+</a>
+
+<div class="small">
+
+重大案件、司法紀錄與時間線分析
+
+</div>
+
+</li>
+
+
+
+
+<li>
+
+<a href="evidence.html">
+
+證物分析
+
+</a>
+
+<div class="small">
+
+文件、影像、錄音與物證資料整理
+
+</div>
+
+</li>
+
+
+
+
+<li>
+
+<a href="identity.html">
+
+身份調查
+
+</a>
+
+<div class="small">
+
+人物背景與關係資料分析
+
+</div>
+
+</li>
+
+
+
+
+<li>
+
+<a href="#">
+
+新聞整理
+
+</a>
+
+
+<div class="small">
+
+案件相關新聞與公開報導彙整
+
+</div>
+
+
+</li>
+
+
+
+
+<li>
+
+<a href="#">
+
+資料交流
+
+</a>
+
+
+<div class="small">
+
+會員提供資料與案件討論交流
+
+</div>
+
+
+</li>
+
+
+</ul>
+
+
+
+
+
+
+
+<div class="side-title">
+
+站務資訊
+
+</div>
+
+
+<ul>
+
+
+<li>
+
+<a href="#">
+
+站規與公告
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#">
+
+回報問題
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="main">
+
+
+
 
 
 <div class="box">
@@ -328,173 +667,43 @@ Case Watch ｜ 民間案件討論平台
 </div>
 
 
+
+
 <table>
 
 
 <tr>
 
-<th>
-主題
-</th>
-
-<th>
-作者
-</th>
-
-<th>
-回覆
-</th>
-
-<th>
-最後更新
-</th>
-
-</tr>
-
-
-
-
-
-<tr>
-
 
 <td>
 
-<a href="thread0419.html">
 
-【CASE-2018-0419】山河公園命案，有人整理過完整時間線嗎？
+<b>
 
-</a>
+重大刑案資料與討論集中區
 
+</b>
 
-<br>
 
-<span class="small">
+<br><br>
 
-案件時間軸、證人紀錄、嫌疑人資料整理
 
-</span>
+本版收錄重大案件時間線、公開資料整理、
 
+司法紀錄與案件分析討論。
 
-</td>
 
-
-<td>
-Archive_0419
-</td>
-
-
-<td>
-284
-</td>
-
-
-<td>
-2026/07/23
-</td>
-
-
-</tr>
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-<a href="#">
-
-【CASE-2019-0326】北區連續失蹤案件討論
-
-</a>
-
-
-<br>
-
-<span class="small">
-
-公開資料與新聞紀錄整理
-
-</span>
-
-
-</td>
-
-
-<td>
-CrimeWatcher
-</td>
-
-
-<td>
-146
-</td>
-
-
-<td>
-2026/07/19
-</td>
-
-
-</tr>
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-<a href="#">
-
-【CASE-2020-1105】河岸遺留物調查紀錄
-
-</a>
-
-
-<br>
-
-<span class="small">
-
-物證與鑑識資料分析
-
-</span>
-
-
-</td>
-
-
-<td>
-EvidenceLab
-</td>
-
-
-<td>
-82
-</td>
-
-
-<td>
-2026/07/15
 </td>
 
 
 </tr>
-
 
 
 </table>
 
 
-</div>
 
+</div>
 
 
 
@@ -514,12 +723,15 @@ EvidenceLab
 
 
 
+
 <table>
 
 
 <tr>
 
+
 <td>
+
 
 <a href="#">
 
@@ -530,9 +742,10 @@ EvidenceLab
 
 <br>
 
+
 <span class="small">
 
-請勿公開未確認個資、避免惡意指控
+請勿公開未確認個資，禁止惡意指控。
 
 </span>
 
@@ -541,12 +754,14 @@ EvidenceLab
 
 
 <td>
+
 管理員
 
 </td>
 
 
 <td>
+
 2026/01/01
 
 </td>
@@ -567,15 +782,15 @@ EvidenceLab
 
 
 
-
 <div class="box">
 
 
 <div class="box-title">
 
-案件說明
+案件討論串
 
 </div>
+
 
 
 <table>
@@ -584,80 +799,32 @@ EvidenceLab
 <tr>
 
 
-<td>
+<th>
+
+主題
+
+</th>
 
 
-目前收錄：
+<th>
 
-<br><br>
+作者
 
-
-重大刑事案件：
-
-<b>
-386
-</b>
-
-件
+</th>
 
 
-<br>
+<th>
+
+回覆
+
+</th>
 
 
-公開討論串：
+<th>
 
-<b>
-1,924
-</b>
+最後更新
 
-篇
-
-
-<br>
-
-
-最後更新：
-
-<b>
-2026/07/23
-</b>
-
-
-</td>
+</th>
 
 
 </tr>
-
-
-</table>
-
-
-</div>
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-<footer>
-
-刑案觀察站 Case Watch © 2026
-
-</footer>
-
-
-
-
-</body>
-
-</html>
-
-<div class="container">

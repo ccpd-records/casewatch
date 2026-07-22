@@ -4,173 +4,302 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>刑案觀察站｜Case Watch</title>
+<title>
+刑案觀察站｜Case Watch
+</title>
 
 
 <style>
 
+
+*{
+box-sizing:border-box;
+}
+
+
 body{
 
 margin:0;
-background:#111;
-color:#ccc;
-font-family:"Microsoft JhengHei",Arial,sans-serif;
+
+background:#e9e9e9;
+
+color:#333;
+
+font-family:
+"Microsoft JhengHei",
+Arial,
+sans-serif;
+
 font-size:14px;
 
 }
 
 
-/* HEADER */
+/* =====================
+ Header
+===================== */
+
 
 header{
 
-background:#1a1a1a;
-border-bottom:1px solid #555;
-padding:25px 40px;
+background:#ffffff;
+
+border-bottom:1px solid #ccc;
+
+padding:20px 0;
 
 }
+
+
+.header-inner{
+
+width:1100px;
+
+max-width:95%;
+
+margin:auto;
+
+}
+
 
 
 .logo{
 
-font-size:30px;
-letter-spacing:5px;
-color:#eee;
+font-size:32px;
+
+font-weight:bold;
+
+color:#333;
+
+letter-spacing:3px;
 
 }
 
 
-.sub{
+.subtitle{
 
-margin-top:8px;
-color:#888;
+color:#777;
+
+margin-top:5px;
+
 font-size:13px;
 
 }
 
 
 
-/* NAV */
+
+
+/* =====================
+ Navigation
+===================== */
+
 
 nav{
 
-background:#0b0b0b;
-border-bottom:1px solid #333;
-padding:12px 40px;
+background:#3b4a5a;
+
+border-bottom:1px solid #222;
 
 }
+
+
+.nav-inner{
+
+width:1100px;
+
+max-width:95%;
+
+margin:auto;
+
+}
+
 
 
 nav a{
 
-color:#bbb;
+display:inline-block;
+
+padding:12px 20px;
+
+color:white;
+
 text-decoration:none;
-margin-right:30px;
 
 }
+
 
 
 nav a:hover{
 
-color:white;
+background:#56697d;
 
 }
 
 
 
-/* MAIN */
 
-main{
+
+
+/* =====================
+ Layout
+===================== */
+
+
+.container{
 
 width:1100px;
-max-width:90%;
-margin:25px auto;
 
-}
+max-width:95%;
 
-
-
-/* INFO */
-
-.system{
-
-border:1px solid #444;
-background:#161616;
-padding:12px;
+margin:20px auto;
 
 display:grid;
-grid-template-columns:repeat(4,1fr);
+
+grid-template-columns:220px 1fr;
+
 gap:15px;
 
-margin-bottom:20px;
-
 }
 
 
-.system-box{
-
-border-right:1px solid #333;
-
-}
 
 
-.system-title{
 
-color:#777;
-font-size:12px;
-
-}
+/* =====================
+ Side
+===================== */
 
 
-.system-value{
+.side{
 
-font-size:18px;
-margin-top:5px;
+background:white;
+
+border:1px solid #ccc;
 
 }
 
 
 
-/* BOX */
+.side-title{
 
-.box{
+background:#f3f3f3;
 
-border:1px solid #444;
-background:#0d0d0d;
-margin-bottom:20px;
+border-bottom:1px solid #ccc;
 
-}
-
-
-.box-title{
-
-background:#1a1a1a;
-border-bottom:1px solid #444;
-
-padding:10px 15px;
+padding:10px;
 
 font-weight:bold;
-letter-spacing:2px;
+
+}
+
+
+.side ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+
+.side li{
+
+padding:10px;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+.side a{
+
+color:#333;
+
+text-decoration:none;
+
+}
+
+
+.side a:hover{
+
+color:#0066cc;
 
 }
 
 
 
-.box-content{
+
+
+/* =====================
+ Main Forum
+===================== */
+
+
+.content{
+
+background:white;
+
+border:1px solid #ccc;
+
+}
+
+
+
+
+
+.section-title{
+
+background:#f3f3f3;
+
+border-bottom:1px solid #ccc;
+
+padding:12px;
+
+font-weight:bold;
+
+}
+
+
+
+
+.notice{
 
 padding:15px;
 
+line-height:1.8;
+
+border-bottom:1px solid #ddd;
+
 }
 
 
 
-/* TABLE */
+.notice a{
+
+color:#0066cc;
+
+}
+
+
+
+
+
+
+/* =====================
+ Forum Table
+===================== */
+
 
 table{
 
 width:100%;
+
 border-collapse:collapse;
 
 }
@@ -178,30 +307,41 @@ border-collapse:collapse;
 
 th{
 
-background:#181818;
-border:1px solid #444;
-padding:9px;
+background:#fafafa;
+
+border-bottom:1px solid #ddd;
+
+padding:10px;
+
+text-align:left;
 
 }
+
 
 
 td{
 
-border:1px solid #333;
-padding:9px;
+border-bottom:1px solid #eee;
+
+padding:10px;
 
 }
 
 
-td a{
 
-color:#ddd;
+.thread-title{
+
+color:#0066cc;
+
+font-weight:bold;
+
 text-decoration:none;
 
 }
 
 
-td a:hover{
+
+.thread-title:hover{
 
 text-decoration:underline;
 
@@ -209,27 +349,21 @@ text-decoration:underline;
 
 
 
-/* THREAD */
+.small{
 
-.thread{
-
-margin-top:10px;
-
-}
-
-
-.thread-title{
-
-font-size:16px;
-
-}
-
-
-
-.tag{
-
-color:#999;
 font-size:12px;
+
+color:#888;
+
+}
+/* =====================
+ Thread List
+===================== */
+
+
+.thread-box{
+
+padding:0;
 
 }
 
@@ -237,39 +371,78 @@ font-size:12px;
 
 .hot{
 
-color:#900;
+color:#d35400;
+
+font-weight:bold;
 
 }
 
 
 
-/* NOTICE */
+.new{
 
-.notice{
+color:#008000;
 
-line-height:1.8;
+font-weight:bold;
 
 }
 
+
+
+/* =====================
+ Right Info
+===================== */
+
+
+.info{
+
+margin-top:15px;
+
+border-top:1px solid #ddd;
+
+padding-top:10px;
+
+font-size:13px;
+
+color:#555;
+
+}
+
+
+
+
+/* =====================
+ Footer
+===================== */
 
 
 footer{
 
-border-top:1px solid #333;
-margin-top:40px;
-padding:20px;
+width:1100px;
+
+max-width:95%;
+
+margin:30px auto;
+
 text-align:center;
-color:#777;
+
+color:#888;
+
+font-size:12px;
+
+padding:20px 0;
+
+border-top:1px solid #ccc;
 
 }
 
 
 
-/* MOBILE */
+/* Mobile */
 
 @media(max-width:800px){
 
-.system{
+.container{
 
 grid-template-columns:1fr;
 
@@ -277,12 +450,10 @@ grid-template-columns:1fr;
 
 }
 
-
 </style>
 
 
 </head>
-
 
 
 <body>
@@ -292,16 +463,18 @@ grid-template-columns:1fr;
 <header>
 
 
+<div class="header-inner">
+
+
 <div class="logo">
-
 刑案觀察站
-
 </div>
 
 
-<div class="sub">
+<div class="subtitle">
+Case Watch ｜ 民間刑案資料交流平台
+</div>
 
-CASE WATCH ｜ 民間刑案資料研究平台
 
 </div>
 
@@ -315,6 +488,9 @@ CASE WATCH ｜ 民間刑案資料研究平台
 <nav>
 
 
+<div class="nav-inner">
+
+
 <a href="index.html">
 首頁
 </a>
@@ -326,13 +502,16 @@ CASE WATCH ｜ 民間刑案資料研究平台
 
 
 <a href="archive.html">
-案件檔案
+案件整理
 </a>
 
 
-<a href="search.html">
-資料搜尋
+<a href="member.html">
+會員中心
 </a>
+
+
+</div>
 
 
 </nav>
@@ -342,127 +521,149 @@ CASE WATCH ｜ 民間刑案資料研究平台
 
 
 
-
-<main>
-
+<div class="container">
 
 
 
 
-<div class="system">
 
 
-<div class="system-box">
+<!-- 左側版區 -->
 
-<div class="system-title">
-成立時間
-</div>
 
-<div class="system-value">
-2012
-</div>
+<div class="side">
 
+
+<div class="side-title">
+版面分類
 </div>
 
 
 
-
-<div class="system-box">
-
-<div class="system-title">
-註冊會員
-</div>
-
-<div class="system-value">
-12,483
-</div>
-
-</div>
+<ul>
 
 
+<li>
+<a href="#">
+未解案件
+</a>
+</li>
 
 
-<div class="system-box">
-
-<div class="system-title">
-今日文章
-</div>
-
-<div class="system-value">
-36
-</div>
-
-</div>
+<li>
+<a href="#">
+重大刑案
+</a>
+</li>
 
 
+<li>
+<a href="#">
+證物分析
+</a>
+</li>
 
 
-<div class="system-box">
-
-<div class="system-title">
-目前狀態
-</div>
-
-<div class="system-value">
-ONLINE
-</div>
-
-</div>
+<li>
+<a href="#">
+身份調查
+</a>
+</li>
 
 
-</div>
+<li>
+<a href="#">
+新聞整理
+</a>
+</li>
 
 
+<li>
+<a href="#">
+資料交流
+</a>
+</li>
 
+
+</ul>
 
 
 
+<div class="side-title">
 
-<div class="box">
-
-
-<div class="box-title">
-
-網站公告
+站務資訊
 
 </div>
 
 
-<div class="box-content notice">
+<ul>
 
 
-刑案觀察站為民間案件資料整理與討論平台。
+<li>
+<a href="#">
+站規與公告
+</a>
+</li>
 
 
-<br><br>
+<li>
+<a href="#">
+回報問題
+</a>
+</li>
 
 
-本站內容來源包含：
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- 主區域 -->
+
+
+<div class="content">
+
+
+
+
+
+
+<div class="section-title">
+
+📌 站務公告
+
+</div>
+
+
+
+<div class="notice">
+
+
+<a href="#">
+【公告】刑案觀察站討論規範
+</a>
 
 <br>
 
-・公開新聞資料
+
+<a href="#">
+【重要】CASE-2018-0419 山河公園命案集中討論串
+</a>
+
 
 <br>
 
-・司法公開文件
 
-<br>
+<a href="#">
+【提醒】請勿公開未證實個人資料
+</a>
 
-・會員整理紀錄
-
-
-<br><br>
-
-
-本網站非政府機關。
-
-<br>
-
-所有討論僅代表會員個人分析。
-
-
-</div>
 
 
 </div>
@@ -473,19 +674,13 @@ ONLINE
 
 
 
+<div class="section-title">
 
-
-<div class="box">
-
-
-<div class="box-title">
-
-熱門案件
+熱門討論
 
 </div>
 
 
-<div class="box-content">
 
 
 <table>
@@ -494,15 +689,15 @@ ONLINE
 <tr>
 
 <th>
-案件編號
+主題
 </th>
 
 <th>
-案件名稱
+作者
 </th>
 
 <th>
-討論數
+回覆
 </th>
 
 <th>
@@ -514,40 +709,52 @@ ONLINE
 
 
 
+
 <tr>
 
 <td>
-CASE-2018-0419
-</td>
 
-<td>
 
-<a href="thread0419.html">
+<a class="thread-title"
+href="thread0419.html">
 
-山河公園命案
+【CASE-2018-0419】
+山河公園命案，有人整理過完整時間線嗎？
 
 </a>
 
+
 <br>
 
-<span class="tag">
 
-重大刑案 / 熱門
+<span class="small">
+
+重大刑案討論區
 
 </span>
 
+
 </td>
+
+
+<td>
+Archive_0419
+</td>
+
 
 <td>
 284
 </td>
 
+
 <td>
 2026/07/23
-
 </td>
 
+
 </tr>
+
+
 
 
 
@@ -556,30 +763,46 @@ CASE-2018-0419
 <tr>
 
 <td>
-CASE-2017-0908
-</td>
 
-<td>
 
-<a href="#">
+<a class="thread-title"
+href="thread-e004.html">
 
-第十三號證物
+E-004案件補充資料消失問題
 
 </a>
 
 
+<br>
+
+
+<span class="small">
+
+證物分析區
+
+</span>
+
+
 </td>
+
+
+<td>
+EvidenceHunter
+</td>
+
 
 <td>
 93
 </td>
 
-<td>
-2026/07/18
 
+<td>
+2026/07/08
 </td>
 
+
 </tr>
+
 
 
 
@@ -589,61 +812,67 @@ CASE-2017-0908
 <tr>
 
 <td>
-CASE-2014-0721
-</td>
 
-<td>
 
-<a href="#">
+<a class="thread-title"
+href="thread-person.html">
 
-雨夜失蹤事件
+周柏廷身份資料查證集中串
 
 </a>
 
 
+<br>
+
+
+<span class="small">
+
+身份調查區
+
+</span>
+
+
 </td>
+
+
+<td>
+NoName
+</td>
+
 
 <td>
 67
 </td>
 
-<td>
-2026/06/30
 
+<td>
+2026/07/08
 </td>
 
+
 </tr>
+
+
 
 
 
 </table>
 
 
-</div>
-
-
-</div>
 
 
 
 
 
 
+<div class="section-title">
 
-
-
-<div class="box">
-
-
-<div class="box-title">
-
-最新討論
+最新文章
 
 </div>
 
 
 
-<div class="box-content">
 
 
 <table>
@@ -660,33 +889,34 @@ CASE-2014-0721
 </th>
 
 <th>
-回覆
+時間
 </th>
 
 </tr>
 
 
 
+
 <tr>
 
 <td>
 
-<a href="thread0419.html">
+<a class="thread-title"
+href="#">
 
-【CASE-2018-0419】山河公園命案，有人整理過完整時間線嗎？
+有人保存2018年原始新聞頁面嗎？
 
 </a>
 
 </td>
 
 <td>
-Archive_0419
+LostArchive
 </td>
 
 <td>
-56
+2026/07/23
 </td>
-
 
 </tr>
 
@@ -697,22 +927,22 @@ Archive_0419
 
 <td>
 
-<a href="#">
+<a class="thread-title"
+href="#">
 
-有人查過第十三號證物嗎？
+山河公園附近監視器位置整理
 
 </a>
 
 </td>
 
 <td>
-EvidenceHunter
+MapFinder
 </td>
 
 <td>
-31
+2026/07/22
 </td>
-
 
 </tr>
 
@@ -724,22 +954,22 @@ EvidenceHunter
 
 <td>
 
-<a href="#">
+<a class="thread-title"
+href="#">
 
-周柏廷這個人真的存在嗎？
+關於案件公開資料版本差異
 
 </a>
 
 </td>
 
 <td>
-NoName
+DataCheck
 </td>
 
 <td>
-21
+2026/07/20
 </td>
-
 
 </tr>
 
@@ -749,58 +979,36 @@ NoName
 </table>
 
 
-</div>
-
-
-</div>
 
 
 
 
+<div class="info">
 
 
+目前會員：
+12,483 人
 
+<br>
 
-<div class="box">
+今日發文：
+36 篇
 
+<br>
 
-<div class="box-title">
+本站成立：
+2012 年
 
-網站資訊
+<br>
 
-</div>
-
-
-<div class="box-content notice">
-
-
-資料庫最後更新：
-
+資料同步：
 2026/07/23
 
-
-<br><br>
-
-
-目前收錄案件：
-
-4,821 件
+</div>
 
 
-<br><br>
 
 
-目前公開討論：
-
-13,594 篇
-
-
-<br><br>
-
-
-系統版本：
-
-CW-3.8.2
 
 
 </div>
@@ -808,11 +1016,6 @@ CW-3.8.2
 
 </div>
 
-
-
-
-
-</main>
 
 
 
@@ -821,15 +1024,15 @@ CW-3.8.2
 
 <footer>
 
+
 刑案觀察站 Case Watch © 2026
+
 
 </footer>
 
 
 
 
-
 </body>
-
 
 </html>

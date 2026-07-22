@@ -9,7 +9,7 @@
 
 
 <title>
-身份調查區｜刑案觀察站
+身份調查｜中央刑案公開資料庫
 </title>
 
 
@@ -53,7 +53,7 @@ padding:25px 0;
 
 .header-inner{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -89,9 +89,6 @@ margin-top:8px;
 
 
 
-
-
-
 nav{
 
 background:#3b4a5a;
@@ -102,7 +99,7 @@ background:#3b4a5a;
 
 .nav-inner{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -138,19 +135,115 @@ background:#596d82;
 
 
 
-
 .container{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
 margin:25px auto;
 
+display:flex;
+
+gap:20px;
+
 }
 
 
 
+
+.side{
+
+width:260px;
+
+background:white;
+
+border:1px solid #ccc;
+
+flex-shrink:0;
+
+}
+
+
+
+.side-title{
+
+background:#f2f2f2;
+
+padding:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+border-bottom:1px solid #ccc;
+
+}
+
+
+
+.side ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+
+
+.side li{
+
+padding:14px;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+
+.side a{
+
+color:#0066cc;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+.side a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+.small{
+
+font-size:12px;
+
+color:#888;
+
+line-height:1.5;
+
+margin-top:5px;
+
+}
+
+
+
+
+.main{
+
+flex:1;
+
+}
 
 
 
@@ -166,14 +259,9 @@ margin-bottom:18px;
 
 
 
-
-
-
 .box-title{
 
 background:#f2f2f2;
-
-border-bottom:1px solid #ccc;
 
 padding:12px;
 
@@ -181,10 +269,9 @@ font-size:16px;
 
 font-weight:bold;
 
+border-bottom:1px solid #ccc;
+
 }
-
-
-
 
 
 
@@ -202,9 +289,9 @@ th{
 
 background:#fafafa;
 
-border-bottom:1px solid #ddd;
-
 padding:10px;
+
+border-bottom:1px solid #ddd;
 
 text-align:left;
 
@@ -219,9 +306,6 @@ padding:12px;
 border-bottom:1px solid #eee;
 
 }
-
-
-
 
 
 
@@ -244,23 +328,34 @@ text-decoration:underline;
 
 
 
-.small{
+.tag{
 
 font-size:12px;
 
-color:#888;
+background:#eee;
+
+padding:3px 8px;
+
+color:#666;
 
 }
 
 
 
 
+.lock{
+
+color:#999;
+
+letter-spacing:2px;
+
+}
 
 
 
 footer{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -279,14 +374,16 @@ border-top:1px solid #ccc;
 }
 
 
-
 </style>
-
 
 </head>
 
 
+
+
+
 <body>
+
 
 
 <header>
@@ -297,14 +394,14 @@ border-top:1px solid #ccc;
 
 <div class="logo">
 
-刑案觀察站
+中央刑案公開資料庫
 
 </div>
 
 
 <div class="subtitle">
 
-Case Watch ｜ 民間案件討論平台
+Case Watch ｜ 身份關聯分析系統
 
 </div>
 
@@ -325,22 +422,30 @@ Case Watch ｜ 民間案件討論平台
 
 
 <a href="index.html">
+
 首頁
+
 </a>
 
 
 <a href="forum.html">
+
 討論區
+
 </a>
 
 
 <a href="archive.html">
+
 案件整理
+
 </a>
 
 
 <a href="member.html">
+
 會員中心
+
 </a>
 
 
@@ -352,280 +457,192 @@ Case Watch ｜ 民間案件討論平台
 
 
 
+
+
 <div class="container">
 
 
-<div class="box">
 
 
-<div class="box-title">
 
-身份調查區
+<div class="side">
+
+
+<div class="side-title">
+
+版面分類
 
 </div>
 
 
 
-
-<table>
-
-
-<tr>
-
-<th>
-調查主題
-</th>
-
-<th>
-類型
-</th>
-
-<th>
-討論
-</th>
-
-<th>
-更新時間
-</th>
-
-</tr>
+<ul>
 
 
+<li>
 
+<a href="unsolved.html">
 
-
-
-
-<tr>
-
-
-<td>
-
-
-<a href="thread-person.html">
-
-周柏廷身份資料調查紀錄
+未解案件
 
 </a>
 
 
-<br>
+<div class="small">
 
-
-<span class="small">
-
-CASE-2018-0419 嫌疑人背景資料整理
-
-</span>
-
-
-</td>
-
-
-<td>
-
-人物資料
-
-</td>
-
-
-<td>
-
-67
-
-</td>
-
-
-<td>
-
-2026/07/23
-
-</td>
-
-
-</tr>
-
-
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-
-<a href="#">
-
-匿名證人「L」身份追查
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-證人訪談紀錄與公開資料比對
-
-</span>
-
-
-</td>
-
-
-<td>
-
-證人分析
-
-</td>
-
-
-<td>
-
-51
-
-</td>
-
-
-<td>
-
-2026/07/19
-
-</td>
-
-
-</tr>
-
-
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-
-<a href="#">
-
-失蹤者背景關係網整理
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-家庭、人際與最後活動紀錄
-
-</span>
-
-
-</td>
-
-
-<td>
-
-人物關係
-
-</td>
-
-
-<td>
-
-39
-
-</td>
-
-
-<td>
-
-2026/07/14
-
-</td>
-
-
-</tr>
-
-
-
-
-
-
-
-
-<tr>
-
-
-<td>
-
-
-<a href="#">
-
-案件相關帳號活動紀錄
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-公開網路資料與時間線比對
-
-</span>
-
-
-</td>
-
-
-<td>
-
-網路資料
-
-</td>
-
-
-<td>
-
-28
-
-</td>
-
-
-<td>
-
-2026/07/08
-
-</td>
-
-
-</tr>
-
-
-
-
-
-</table>
-
-
+失蹤案件、懸案與長期未破案件整理
 
 </div>
 
 
+</li>
 
 
+
+<li>
+
+<a href="crime.html">
+
+重大刑案
+
+</a>
+
+
+<div class="small">
+
+重大案件、司法紀錄與時間線分析
+
+</div>
+
+
+</li>
+
+
+
+<li>
+
+<a href="evidence.html">
+
+證物分析
+
+</a>
+
+
+<div class="small">
+
+文件、影像、錄音與物證資料整理
+
+</div>
+
+
+</li>
+
+
+
+<li>
+
+<a href="identity.html">
+
+身份調查
+
+</a>
+
+
+<div class="small">
+
+人物背景與關係資料分析
+
+</div>
+
+
+</li>
+
+
+
+<li>
+
+<a href="news.html">
+
+新聞整理
+
+</a>
+
+
+<div class="small">
+
+案件相關新聞與公開報導彙整
+
+</div>
+
+
+</li>
+
+
+
+<li>
+
+<a href="exchange.html">
+
+資料交流
+
+</a>
+
+
+<div class="small">
+
+會員提供資料與案件討論交流
+
+</div>
+
+
+</li>
+
+
+
+</ul>
+
+
+
+
+
+
+<div class="side-title">
+
+站務資訊
+
+</div>
+
+
+<ul>
+
+
+<li>
+
+<a href="#">
+
+站規與公告
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#">
+
+資料回報
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+
+<div class="main">
 
 
 
@@ -636,11 +653,9 @@ CASE-2018-0419 嫌疑人背景資料整理
 
 <div class="box-title">
 
-人物資料庫
+身份關聯分析｜CASE-2018-0419
 
 </div>
-
-
 
 
 
@@ -652,49 +667,62 @@ CASE-2018-0419 嫌疑人背景資料整理
 
 <td>
 
-
-本區整理：
-
-<br><br>
-
-
-・案件相關人物
-
-<br>
-
-・證人資料
-
-<br>
-
-・公開身份紀錄
-
-<br>
-
-・關係網分析
-
-
-<br><br>
-
-
-目前收錄人物：
 
 <b>
-582
+
+分析對象：
+
 </b>
 
-筆
+周柏廷
 
 
-<br>
+<br><br>
 
-
-公開調查紀錄：
 
 <b>
-1,046
+
+公開身份狀態：
+
 </b>
 
-份
+存在
+
+
+<br><br>
+
+
+<b>
+
+資料完整度：
+
+</b>
+
+100%
+
+
+<br><br>
+
+
+<b>
+
+來源數量：
+
+</b>
+
+6組
+
+
+<br><br>
+
+
+<span class="small">
+
+系統判定：
+
+資料完整，但身份來源存在差異。
+
+</span>
 
 
 </td>
@@ -721,11 +749,476 @@ CASE-2018-0419 嫌疑人背景資料整理
 
 <div class="box-title">
 
-調查規範
+周柏廷公開資料分析
 
 </div>
 
 
+
+<table>
+
+
+<tr>
+
+
+<th>
+
+項目
+
+</th>
+
+
+<th>
+
+資料
+
+</th>
+
+
+<th>
+
+狀態
+
+</th>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+
+<td>
+
+基本資料
+
+</td>
+
+
+<td>
+
+姓名、生日、戶籍
+
+</td>
+
+
+<td>
+
+確認
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+教育背景
+
+</td>
+
+
+<td>
+
+山河國小<br>
+山河第一中學<br>
+山河高中<br>
+東華科技大學
+
+</td>
+
+
+<td>
+
+來源異常
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+工作履歷
+
+</td>
+
+
+<td>
+
+星瀚科技工程師
+
+</td>
+
+
+<td>
+
+確認
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+私人資料
+
+</td>
+
+
+<td>
+
+攝影、音樂、旅行<br>
+Facebook、Instagram、Spotify
+
+</td>
+
+
+<td>
+
+確認
+
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+身份模組列表
+
+</div>
+
+
+
+<table>
+
+
+<tr>
+
+
+<th>
+
+模組
+
+</th>
+
+
+<th>
+
+來源人物
+
+</th>
+
+
+<th>
+
+功能
+
+</th>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+身份模組01
+
+</td>
+
+
+<td>
+
+
+<a href="#">
+
+陳冠廷
+
+</a>
+
+
+</td>
+
+
+<td>
+
+教育人生
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+身份模組02
+
+</td>
+
+
+<td>
+
+
+<a href="#">
+
+許文哲
+
+</a>
+
+
+</td>
+
+
+<td>
+
+出生來源
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+身份模組03
+
+</td>
+
+
+<td>
+
+
+<a href="#">
+
+王志豪
+
+</a>
+
+
+</td>
+
+
+<td>
+
+官方身份
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+身份模組04
+
+</td>
+
+
+<td>
+
+
+<a href="#">
+
+林俊宇
+
+</a>
+
+
+</td>
+
+
+<td>
+
+職涯紀錄
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+身份模組05
+
+</td>
+
+
+<td>
+
+
+<a href="#">
+
+張雅婷
+
+</a>
+
+
+</td>
+
+
+<td>
+
+私人生活
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+身份模組06
+
+</td>
+
+
+<td>
+
+
+<span class="lock">
+
+██████
+
+</span>
+
+
+</td>
+
+
+<td>
+
+最高權限
+
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+身份模組01｜陳冠廷
+
+</div>
 
 
 
@@ -738,24 +1231,64 @@ CASE-2018-0419 嫌疑人背景資料整理
 <td>
 
 
-身份調查僅限公開資料整理。
+<b>
+
+功能：
+
+</b>
+
+教育人生
+
 
 <br><br>
 
 
-禁止：
+提供資料：
+
 
 <br>
 
-・公開私人個資
+
+- 國小紀錄
 
 <br>
 
-・惡意指控未確認對象
+
+- 國中紀錄
 
 <br>
 
-・散播未驗證資訊
+
+- 高中紀錄
+
+<br>
+
+
+- 畢業照片
+
+
+<br><br>
+
+
+分析結果：
+
+
+<br>
+
+
+照片人物與周柏廷公開照片一致。
+
+
+<br><br>
+
+
+但原始資料姓名：
+
+<b>
+
+陳冠廷
+
+</b>
 
 
 </td>
@@ -775,8 +1308,375 @@ CASE-2018-0419 嫌疑人背景資料整理
 
 
 
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+身份模組02｜許文哲
+
 </div>
 
+
+
+<table>
+
+
+<tr>
+
+
+<td>
+
+
+<b>
+
+功能：
+
+</b>
+
+出生來源
+
+
+<br><br>
+
+
+提供資料：
+
+<br>
+
+
+- 出生醫院
+
+<br>
+
+
+- 戶籍資料
+
+<br>
+
+
+- 家庭關係
+
+
+<br><br>
+
+
+分析結果：
+
+<br>
+
+
+出生紀錄格式與周柏廷資料高度相似。
+
+<br>
+
+
+但出生地點不同。
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+身份模組03～05
+
+</div>
+
+
+
+<table>
+
+
+<tr>
+
+
+<td>
+
+
+
+<b>
+
+身份模組03｜王志豪
+
+</b>
+
+
+<br>
+
+
+功能：
+
+官方身份
+
+
+<br>
+
+
+資料：
+
+兵役、政府紀錄
+
+
+<br><br>
+
+
+
+<b>
+
+身份模組04｜林俊宇
+
+</b>
+
+
+<br>
+
+
+功能：
+
+職涯紀錄
+
+
+<br>
+
+
+資料：
+
+公司、人際關係、工作履歷
+
+
+<br><br>
+
+
+
+<b>
+
+身份模組05｜張雅婷
+
+</b>
+
+
+<br>
+
+
+功能：
+
+私人生活
+
+
+<br>
+
+
+資料：
+
+社群、消費、興趣
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+身份模組06｜最高權限資料
+
+</div>
+
+
+
+<table>
+
+
+<tr>
+
+
+<td>
+
+
+狀態：
+
+<span class="lock">
+
+加密
+
+</span>
+
+
+<br><br>
+
+
+權限：
+
+最高保護等級
+
+
+<br><br>
+
+
+資料：
+
+<span class="lock">
+
+████████████
+
+</span>
+
+
+<br><br>
+
+
+備註：
+
+
+<br>
+
+
+「此身份資料不得與任何公開案件建立直接關聯。」
+
+
+<br><br>
+
+
+<a href="#">
+
+申請權限提升
+
+</a>
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+系統分析提示
+
+</div>
+
+
+
+<table>
+
+
+<tr>
+
+
+<td>
+
+
+身份完整性測試：
+
+
+<br><br>
+
+
+已完成：
+
+5 / 6
+
+
+<br><br>
+
+
+剩餘資料：
+
+<b>
+
+身份模組06
+
+</b>
+
+
+<br><br>
+
+
+提示：
+
+
+<br>
+
+
+「如果周柏廷不存在，那麼現在檢查的是誰？」
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
 
 
 
@@ -784,7 +1684,11 @@ CASE-2018-0419 嫌疑人背景資料整理
 
 <footer>
 
-刑案觀察站 Case Watch © 2026
+
+中央刑案公開資料庫
+
+Case Watch © 2026
+
 
 </footer>
 
@@ -794,3 +1698,5 @@ CASE-2018-0419 嫌疑人背景資料整理
 </body>
 
 </html>
+
+</div>

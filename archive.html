@@ -9,7 +9,7 @@
 
 
 <title>
-案件整理｜刑案觀察站
+案件資料庫｜刑案觀察站
 </title>
 
 
@@ -39,7 +39,6 @@ font-size:14px;
 
 
 
-
 header{
 
 background:#fff;
@@ -54,7 +53,7 @@ padding:25px 0;
 
 .header-inner{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -91,7 +90,6 @@ margin-top:8px;
 
 
 
-
 nav{
 
 background:#3b4a5a;
@@ -102,7 +100,7 @@ background:#3b4a5a;
 
 .nav-inner{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -137,20 +135,115 @@ background:#596d82;
 
 
 
-
-
-
 .container{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
 margin:25px auto;
 
+display:flex;
+
+gap:20px;
+
 }
 
 
+
+.side{
+
+width:260px;
+
+background:white;
+
+border:1px solid #ccc;
+
+flex-shrink:0;
+
+}
+
+
+
+.side-title{
+
+background:#f2f2f2;
+
+padding:12px;
+
+font-size:16px;
+
+font-weight:bold;
+
+border-bottom:1px solid #ccc;
+
+}
+
+
+
+.side ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+
+
+.side li{
+
+padding:14px;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+
+.side a{
+
+color:#0066cc;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+.side a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+
+.small{
+
+font-size:12px;
+
+color:#888;
+
+line-height:1.5;
+
+margin-top:5px;
+
+}
+
+
+
+
+.main{
+
+flex:1;
+
+}
 
 
 
@@ -167,13 +260,9 @@ margin-bottom:18px;
 
 
 
-
-
 .box-title{
 
 background:#f2f2f2;
-
-border-bottom:1px solid #ccc;
 
 padding:12px;
 
@@ -181,11 +270,9 @@ font-size:16px;
 
 font-weight:bold;
 
+border-bottom:1px solid #ccc;
+
 }
-
-
-
-
 
 
 
@@ -199,19 +286,17 @@ border-collapse:collapse;
 
 
 
-
 th{
 
 background:#fafafa;
 
-border-bottom:1px solid #ddd;
-
 padding:10px;
+
+border-bottom:1px solid #ddd;
 
 text-align:left;
 
 }
-
 
 
 
@@ -225,8 +310,6 @@ border-bottom:1px solid #eee;
 
 
 
-
-
 a{
 
 color:#0066cc;
@@ -234,7 +317,6 @@ color:#0066cc;
 text-decoration:none;
 
 }
-
 
 
 a:hover{
@@ -245,23 +327,35 @@ text-decoration:underline;
 
 
 
+input{
 
+padding:8px;
 
-.small{
+border:1px solid #ccc;
 
-font-size:12px;
-
-color:#888;
+width:70%;
 
 }
 
 
 
+button{
+
+padding:8px 15px;
+
+background:#3b4a5a;
+
+color:white;
+
+border:0;
+
+}
+
 
 
 footer{
 
-width:980px;
+width:1000px;
 
 max-width:90%;
 
@@ -278,7 +372,6 @@ color:#888;
 border-top:1px solid #ccc;
 
 }
-
 
 
 </style>
@@ -307,7 +400,7 @@ border-top:1px solid #ccc;
 
 <div class="subtitle">
 
-Case Watch ｜ 民間案件討論平台
+Case Watch ｜ 民間案件資料庫
 
 </div>
 
@@ -328,22 +421,30 @@ Case Watch ｜ 民間案件討論平台
 
 
 <a href="index.html">
+
 首頁
+
 </a>
 
 
 <a href="forum.html">
+
 討論區
+
 </a>
 
 
 <a href="archive.html">
+
 案件整理
+
 </a>
 
 
 <a href="member.html">
+
 會員中心
+
 </a>
 
 
@@ -354,7 +455,180 @@ Case Watch ｜ 民間案件討論平台
 
 
 
+
+
 <div class="container">
+
+
+
+
+<div class="side">
+
+
+<div class="side-title">
+
+版面分類
+
+</div>
+
+
+
+<ul>
+
+
+<li>
+
+<a href="unsolved.html">
+
+未解案件
+
+</a>
+
+<div class="small">
+
+失蹤案件、懸案與長期未破案件整理
+
+</div>
+
+</li>
+
+
+
+<li>
+
+<a href="crime.html">
+
+重大刑案
+
+</a>
+
+<div class="small">
+
+重大案件、司法紀錄與時間線分析
+
+</div>
+
+</li>
+
+
+
+<li>
+
+<a href="evidence.html">
+
+證物分析
+
+</a>
+
+<div class="small">
+
+文件、影像、錄音與物證資料整理
+
+</div>
+
+</li>
+
+
+
+<li>
+
+<a href="identity.html">
+
+身份調查
+
+</a>
+
+<div class="small">
+
+人物背景與關係資料分析
+
+</div>
+
+</li>
+
+
+
+<li>
+
+<a href="#">
+
+新聞整理
+
+</a>
+
+<div class="small">
+
+案件相關新聞與公開報導彙整
+
+</div>
+
+</li>
+
+
+
+<li>
+
+<a href="#">
+
+資料交流
+
+</a>
+
+<div class="small">
+
+會員提供資料與案件討論交流
+
+</div>
+
+</li>
+
+
+</ul>
+
+
+
+
+<div class="side-title">
+
+站務資訊
+
+</div>
+
+
+<ul>
+
+
+<li>
+
+<a href="#">
+
+站規與公告
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#">
+
+回報問題
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+<div class="main">
+
+
+
 
 
 <div class="box">
@@ -362,7 +636,76 @@ Case Watch ｜ 民間案件討論平台
 
 <div class="box-title">
 
-案件資料庫索引
+中央刑案公開資料庫
+
+</div>
+
+
+
+<table>
+
+
+<tr>
+
+
+<td>
+
+
+<b>
+
+案件資料搜尋
+
+</b>
+
+
+<br><br>
+
+
+<input type="text" placeholder="輸入案件編號、關鍵字、人物名稱">
+
+
+<button>
+
+搜尋
+
+</button>
+
+
+<br><br>
+
+
+<span class="small">
+
+可搜尋案件編號、案件名稱、相關人物與資料分類。
+
+</span>
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+案件分類
 
 </div>
 
@@ -374,24 +717,29 @@ Case Watch ｜ 民間案件討論平台
 
 <tr>
 
-<th>
-案件編號
-</th>
 
 <th>
-案件名稱
+
+分類
+
 </th>
 
-<th>
-類型
-</th>
 
 <th>
-狀態
+
+說明
+
 </th>
+
+
+<th>
+
+收錄
+
+</th>
+
 
 </tr>
-
 
 
 
@@ -402,43 +750,27 @@ Case Watch ｜ 民間案件討論平台
 
 <td>
 
-CASE-2014-0721
 
-</td>
+<a href="unsolved.html">
 
-
-<td>
-
-
-<a href="#">
-
-雨夜失蹤事件
+未解案件
 
 </a>
 
 
-<br>
+</td>
 
-<span class="small">
 
-高中生失蹤案件｜最後目擊地點：市區公園
+<td>
 
-</span>
-
+失蹤案件、懸案、長期未破案件
 
 </td>
 
 
 <td>
 
-失蹤案件
-
-</td>
-
-
-<td>
-
-調查中
+742 件
 
 </td>
 
@@ -457,43 +789,27 @@ CASE-2014-0721
 
 <td>
 
-CASE-2016-1123
 
-</td>
+<a href="crime.html">
 
-
-<td>
-
-
-<a href="#">
-
-白橋錄音事件
+重大刑案
 
 </a>
 
 
-<br>
+</td>
 
-<span class="small">
 
-匿名錄音檔與來源追查
+<td>
 
-</span>
-
+重大案件、司法紀錄與事件時間線
 
 </td>
 
 
 <td>
 
-證物案件
-
-</td>
-
-
-<td>
-
-部分公開
+386 件
 
 </td>
 
@@ -508,13 +824,6 @@ CASE-2016-1123
 
 
 <tr>
-
-
-<td>
-
-CASE-2017-0908
-
-</td>
 
 
 <td>
@@ -522,18 +831,48 @@ CASE-2017-0908
 
 <a href="evidence.html">
 
-第十三號證物
+證物分析
 
 </a>
 
 
-<br>
+</td>
 
-<span class="small">
 
-證物編號異常與封存文件調查
+<td>
 
-</span>
+文件、影像、錄音與物證整理
+
+</td>
+
+
+<td>
+
+1,263 項
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+
+<a href="identity.html">
+
+身份調查
+
+</a>
 
 
 </td>
@@ -541,16 +880,81 @@ CASE-2017-0908
 
 <td>
 
-特殊證物
+人物背景、身份確認與關係分析
 
 </td>
 
 
 <td>
 
-限制公開
+518 件
 
 </td>
+
+
+</tr>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+最新收錄案件
+
+</div>
+
+
+
+
+
+<table>
+
+
+
+<tr>
+
+
+<th>
+
+案件編號
+
+</th>
+
+
+<th>
+
+案件名稱
+
+</th>
+
+
+<th>
+
+分類
+
+</th>
+
+
+<th>
+
+更新日期
+
+</th>
 
 
 </tr>
@@ -584,9 +988,10 @@ CASE-2018-0419
 
 <br>
 
+
 <span class="small">
 
-林子安死亡案件｜嫌疑人周柏廷資料整理
+死亡案件｜時間線與人物資料整理
 
 </span>
 
@@ -603,7 +1008,7 @@ CASE-2018-0419
 
 <td>
 
-公開調查完成
+2026/07/23
 
 </td>
 
@@ -613,6 +1018,114 @@ CASE-2018-0419
 
 
 
+
+
+
+
+<tr>
+
+
+<td>
+
+CASE-2017-0908
+
+</td>
+
+
+<td>
+
+
+<a href="thread-e004.html">
+
+第十三號證物事件
+
+</a>
+
+
+<br>
+
+
+<span class="small">
+
+文件編號異常調查
+
+</span>
+
+
+</td>
+
+
+<td>
+
+證物分析
+
+</td>
+
+
+<td>
+
+2026/07/23
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+
+CASE-2014-0721
+
+</td>
+
+
+<td>
+
+
+<a href="unsolved.html">
+
+雨夜失蹤事件
+
+</a>
+
+
+<br>
+
+
+<span class="small">
+
+最後行蹤與失蹤紀錄
+
+</span>
+
+
+</td>
+
+
+<td>
+
+未解案件
+
+</td>
+
+
+<td>
+
+2026/07/22
+
+</td>
+
+
+</tr>
 
 
 
@@ -635,37 +1148,30 @@ CASE-2018-0419
 
 <div class="box-title">
 
-案件分類
+資料庫更新紀錄
 
 </div>
-
-
 
 
 
 <table>
 
 
+
 <tr>
 
 
 <td>
 
 
-<a href="crime.html">
-
-重大刑案
-
-</a>
-
+2026/07/23
 
 <br>
 
-<span class="small">
 
-重大案件、司法紀錄、案件時間線
+新增：
 
-</span>
+CASE-2018-0419 時間線資料更新
 
 
 </td>
@@ -676,27 +1182,20 @@ CASE-2018-0419
 
 
 
-
 <tr>
 
 
 <td>
 
 
-<a href="unsolved.html">
-
-未解案件
-
-</a>
-
+2026/07/20
 
 <br>
 
-<span class="small">
 
-失蹤案件、懸案、未知身份案件
+更新：
 
-</span>
+E-004 證物文件比對紀錄
 
 
 </td>
@@ -707,27 +1206,20 @@ CASE-2018-0419
 
 
 
-
 <tr>
 
 
 <td>
 
 
-<a href="evidence.html">
-
-證物分析
-
-</a>
-
+2026/07/15
 
 <br>
 
-<span class="small">
 
-文件、影像、錄音與物證資料
+新增：
 
-</span>
+身份調查資料分類系統
 
 
 </td>
@@ -735,36 +1227,6 @@ CASE-2018-0419
 
 </tr>
 
-
-
-
-
-<tr>
-
-
-<td>
-
-
-<a href="identity.html">
-
-身份調查
-
-</a>
-
-
-<br>
-
-<span class="small">
-
-人物背景與關係資料整理
-
-</span>
-
-
-</td>
-
-
-</tr>
 
 
 </table>
@@ -792,7 +1254,6 @@ CASE-2018-0419
 
 
 
-
 <table>
 
 
@@ -802,10 +1263,12 @@ CASE-2018-0419
 <td>
 
 
-案件總數：
+目前收錄案件：
 
 <b>
+
 1,842
+
 </b>
 
 件
@@ -814,34 +1277,54 @@ CASE-2018-0419
 <br><br>
 
 
-公開案件：
+公開文件：
 
 <b>
-1,204
+
+8,932
+
 </b>
 
-件
+份
 
 
 <br><br>
 
 
-限制公開：
+證物資料：
 
 <b>
-638
+
+1,263
+
 </b>
 
-件
+項
 
 
 <br><br>
 
 
-資料庫版本：
+討論文章：
 
 <b>
-v3.6.1
+
+5,437
+
+</b>
+
+篇
+
+
+<br><br>
+
+
+最後更新：
+
+<b>
+
+2026/07/23
+
 </b>
 
 
@@ -860,7 +1343,13 @@ v3.6.1
 
 
 
+
+
 </div>
+
+
+</div>
+
 
 
 
@@ -868,7 +1357,9 @@ v3.6.1
 
 <footer>
 
+
 刑案觀察站 Case Watch © 2026
+
 
 </footer>
 

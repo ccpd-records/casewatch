@@ -7,13 +7,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <title>
 刑案觀察站｜Case Watch
 </title>
 
 
 <style>
-
 
 *{
 box-sizing:border-box;
@@ -38,29 +38,28 @@ font-size:14px;
 }
 
 
-/* =====================
- Header
-===================== */
-
 
 header{
 
-background:#ffffff;
+background:#fff;
 
 border-bottom:1px solid #ccc;
 
-padding:20px 0;
+padding:25px 0;
 
 }
 
 
+
 .header-inner{
 
-width:1100px;
+width:1000px;
 
-max-width:95%;
+max-width:90%;
 
 margin:auto;
+
+text-align:center;
 
 }
 
@@ -68,52 +67,47 @@ margin:auto;
 
 .logo{
 
-font-size:32px;
+font-size:34px;
 
 font-weight:bold;
 
-color:#333;
-
-letter-spacing:3px;
+letter-spacing:4px;
 
 }
+
 
 
 .subtitle{
 
+font-size:13px;
+
 color:#777;
 
-margin-top:5px;
-
-font-size:13px;
+margin-top:8px;
 
 }
 
 
 
-
-
-/* =====================
- Navigation
-===================== */
 
 
 nav{
 
 background:#3b4a5a;
 
-border-bottom:1px solid #222;
-
 }
+
 
 
 .nav-inner{
 
-width:1100px;
+width:1000px;
 
-max-width:95%;
+max-width:90%;
 
 margin:auto;
+
+text-align:center;
 
 }
 
@@ -123,7 +117,7 @@ nav a{
 
 display:inline-block;
 
-padding:12px 20px;
+padding:12px 22px;
 
 color:white;
 
@@ -135,33 +129,25 @@ text-decoration:none;
 
 nav a:hover{
 
-background:#56697d;
+background:#596d82;
 
 }
 
 
 
-
-
-
-/* =====================
- Layout
-===================== */
 
 
 .container{
 
-width:1100px;
+width:1000px;
 
-max-width:95%;
+max-width:90%;
 
-margin:20px auto;
+margin:25px auto;
 
-display:grid;
+display:flex;
 
-grid-template-columns:220px 1fr;
-
-gap:15px;
+gap:20px;
 
 }
 
@@ -169,16 +155,17 @@ gap:15px;
 
 
 
-/* =====================
- Side
-===================== */
-
+/* 左側 */
 
 .side{
+
+width:260px;
 
 background:white;
 
 border:1px solid #ccc;
+
+flex-shrink:0;
 
 }
 
@@ -186,15 +173,18 @@ border:1px solid #ccc;
 
 .side-title{
 
-background:#f3f3f3;
+background:#f2f2f2;
 
-border-bottom:1px solid #ccc;
-
-padding:10px;
+padding:12px;
 
 font-weight:bold;
 
+font-size:16px;
+
+border-bottom:1px solid #ccc;
+
 }
+
 
 
 .side ul{
@@ -208,128 +198,18 @@ margin:0;
 }
 
 
+
 .side li{
 
-padding:10px;
+padding:14px;
 
 border-bottom:1px solid #eee;
 
 }
 
 
-.side a{
 
-color:#333;
-
-text-decoration:none;
-
-}
-
-
-.side a:hover{
-
-color:#0066cc;
-
-}
-
-
-
-
-
-/* =====================
- Main Forum
-===================== */
-
-
-.content{
-
-background:white;
-
-border:1px solid #ccc;
-
-}
-
-
-
-
-
-.section-title{
-
-background:#f3f3f3;
-
-border-bottom:1px solid #ccc;
-
-padding:12px;
-
-font-weight:bold;
-
-}
-
-
-
-
-.notice{
-
-padding:15px;
-
-line-height:1.8;
-
-border-bottom:1px solid #ddd;
-
-}
-
-
-
-.notice a{
-
-color:#0066cc;
-
-}
-
-
-
-
-
-
-/* =====================
- Forum Table
-===================== */
-
-
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
-}
-
-
-th{
-
-background:#fafafa;
-
-border-bottom:1px solid #ddd;
-
-padding:10px;
-
-text-align:left;
-
-}
-
-
-
-td{
-
-border-bottom:1px solid #eee;
-
-padding:10px;
-
-}
-
-
-
-.thread-title{
+.side li a{
 
 color:#0066cc;
 
@@ -341,7 +221,7 @@ text-decoration:none;
 
 
 
-.thread-title:hover{
+.side li a:hover{
 
 text-decoration:underline;
 
@@ -355,100 +235,110 @@ font-size:12px;
 
 color:#888;
 
-}
-/* =====================
- Thread List
-===================== */
+line-height:1.5;
 
-
-.thread-box{
-
-padding:0;
+margin-top:5px;
 
 }
 
 
 
-.hot{
 
-color:#d35400;
+
+
+/* 右側 */
+
+.main{
+
+flex:1;
+
+}
+
+
+
+.box{
+
+background:white;
+
+border:1px solid #ccc;
+
+margin-bottom:18px;
+
+}
+
+
+
+.box-title{
+
+background:#f2f2f2;
+
+border-bottom:1px solid #ccc;
+
+padding:12px;
 
 font-weight:bold;
 
-}
-
-
-
-.new{
-
-color:#008000;
-
-font-weight:bold;
-
-}
-
-
-
-/* =====================
- Right Info
-===================== */
-
-
-.info{
-
-margin-top:15px;
-
-border-top:1px solid #ddd;
-
-padding-top:10px;
-
-font-size:13px;
-
-color:#555;
+font-size:16px;
 
 }
 
 
 
 
-/* =====================
- Footer
-===================== */
 
+table{
 
-footer{
+width:100%;
 
-width:1100px;
-
-max-width:95%;
-
-margin:30px auto;
-
-text-align:center;
-
-color:#888;
-
-font-size:12px;
-
-padding:20px 0;
-
-border-top:1px solid #ccc;
+border-collapse:collapse;
 
 }
 
 
 
-/* Mobile */
+th{
 
-@media(max-width:800px){
+background:#fafafa;
 
-.container{
+padding:10px;
 
-grid-template-columns:1fr;
+border-bottom:1px solid #ddd;
+
+text-align:left;
 
 }
 
+
+
+td{
+
+padding:12px;
+
+border-bottom:1px solid #eee;
+
 }
+
+
+a{
+
+color:#0066cc;
+
+text-decoration:none;
+
+}
+
+
+
+a:hover{
+
+text-decoration:underline;
+
+}
+
+
+
+
+
 
 </style>
 
@@ -467,12 +357,17 @@ grid-template-columns:1fr;
 
 
 <div class="logo">
+
 刑案觀察站
+
 </div>
 
 
+
 <div class="subtitle">
-Case Watch ｜ 民間刑案資料交流平台
+
+Case Watch ｜ 民間案件討論平台
+
 </div>
 
 
@@ -485,6 +380,8 @@ Case Watch ｜ 民間刑案資料交流平台
 
 
 
+
+
 <nav>
 
 
@@ -492,23 +389,32 @@ Case Watch ｜ 民間刑案資料交流平台
 
 
 <a href="index.html">
+
 首頁
+
 </a>
 
 
 <a href="forum.html">
+
 討論區
+
 </a>
 
 
 <a href="archive.html">
+
 案件整理
+
 </a>
 
 
 <a href="member.html">
+
 會員中心
+
 </a>
+
 
 
 </div>
@@ -521,22 +427,25 @@ Case Watch ｜ 民間刑案資料交流平台
 
 
 
+
 <div class="container">
 
 
 
 
 
-
-<!-- 左側版區 -->
-
-
 <div class="side">
 
 
+
+
+
 <div class="side-title">
+
 版面分類
+
 </div>
+
 
 
 
@@ -551,13 +460,16 @@ Case Watch ｜ 民間刑案資料交流平台
 
 </a>
 
-<br>
 
-<span class="small">
+<div class="small">
+
 失蹤案件、懸案與長期未破案件整理
-</span>
+
+</div>
+
 
 </li>
+
 
 
 
@@ -570,13 +482,16 @@ Case Watch ｜ 民間刑案資料交流平台
 
 </a>
 
-<br>
 
-<span class="small">
+<div class="small">
+
 重大案件、司法紀錄與時間線分析
-</span>
+
+</div>
+
 
 </li>
+
 
 
 
@@ -590,13 +505,16 @@ Case Watch ｜ 民間刑案資料交流平台
 
 </a>
 
-<br>
 
-<span class="small">
+<div class="small">
+
 文件、影像、錄音與物證資料整理
-</span>
+
+</div>
+
 
 </li>
+
 
 
 
@@ -610,13 +528,16 @@ Case Watch ｜ 民間刑案資料交流平台
 
 </a>
 
-<br>
 
-<span class="small">
+<div class="small">
+
 人物背景與關係資料分析
-</span>
+
+</div>
+
 
 </li>
+
 
 
 
@@ -630,13 +551,16 @@ Case Watch ｜ 民間刑案資料交流平台
 
 </a>
 
-<br>
 
-<span class="small">
+<div class="small">
+
 案件相關新聞與公開報導彙整
-</span>
+
+</div>
+
 
 </li>
+
 
 
 
@@ -650,16 +574,26 @@ Case Watch ｜ 民間刑案資料交流平台
 
 </a>
 
-<br>
 
-<span class="small">
+<div class="small">
+
 會員提供資料與案件討論交流
-</span>
+
+</div>
+
 
 </li>
 
 
+
 </ul>
+
+
+
+
+
+
+
 
 
 <div class="side-title">
@@ -669,78 +603,43 @@ Case Watch ｜ 民間刑案資料交流平台
 </div>
 
 
+
+
+
 <ul>
 
 
 <li>
 
 <a href="#">
+
 站規與公告
+
 </a>
 
+
 </li>
+
+
+
+
+<li>
+
+<a href="#">
+
+回報問題
+
+</a>
+
+
+</li>
+
 
 
 </ul>
 
 
-</div>
 
-
-<li>
-<a href="#">
-回報問題
-</a>
-</li>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- 主區域 -->
-
-
-<div class="content">
-
-
-
-
-
-
-<div class="section-title">
-
-📌 站務公告
-
-</div>
-
-
-
-<div class="notice">
-
-
-<a href="#">
-【公告】刑案觀察站討論規範
-</a>
-
-<br>
-
-
-<a href="#">
-【重要】CASE-2018-0419 山河公園命案集中討論串
-</a>
-
-
-<br>
-
-
-<a href="#">
-【提醒】請勿公開未證實個人資料
-</a>
 
 
 
@@ -752,365 +651,5 @@ Case Watch ｜ 民間刑案資料交流平台
 
 
 
-<div class="section-title">
 
-熱門討論
-
-</div>
-
-
-
-
-<table>
-
-
-<tr>
-
-<th>
-主題
-</th>
-
-<th>
-作者
-</th>
-
-<th>
-回覆
-</th>
-
-<th>
-最後更新
-</th>
-
-</tr>
-
-
-
-
-
-<tr>
-
-<td>
-
-
-<a class="thread-title"
-href="thread0419.html">
-
-【CASE-2018-0419】
-山河公園命案，有人整理過完整時間線嗎？
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-重大刑案討論區
-
-</span>
-
-
-</td>
-
-
-<td>
-Archive_0419
-</td>
-
-
-<td>
-284
-</td>
-
-
-<td>
-2026/07/23
-</td>
-
-
-</tr>
-
-
-
-
-
-
-
-<tr>
-
-<td>
-
-
-<a class="thread-title"
-href="thread-e004.html">
-
-E-004案件補充資料消失問題
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-證物分析區
-
-</span>
-
-
-</td>
-
-
-<td>
-EvidenceHunter
-</td>
-
-
-<td>
-93
-</td>
-
-
-<td>
-2026/07/08
-</td>
-
-
-</tr>
-
-
-
-
-
-
-
-<tr>
-
-<td>
-
-
-<a class="thread-title"
-href="thread-person.html">
-
-周柏廷身份資料查證集中串
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-身份調查區
-
-</span>
-
-
-</td>
-
-
-<td>
-NoName
-</td>
-
-
-<td>
-67
-</td>
-
-
-<td>
-2026/07/08
-</td>
-
-
-</tr>
-
-
-
-
-
-</table>
-
-
-
-
-
-
-
-
-<div class="section-title">
-
-最新文章
-
-</div>
-
-
-
-
-
-<table>
-
-
-<tr>
-
-<th>
-標題
-</th>
-
-<th>
-作者
-</th>
-
-<th>
-時間
-</th>
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-
-<a class="thread-title"
-href="#">
-
-有人保存2018年原始新聞頁面嗎？
-
-</a>
-
-</td>
-
-<td>
-LostArchive
-</td>
-
-<td>
-2026/07/23
-</td>
-
-</tr>
-
-
-
-
-<tr>
-
-<td>
-
-<a class="thread-title"
-href="#">
-
-山河公園附近監視器位置整理
-
-</a>
-
-</td>
-
-<td>
-MapFinder
-</td>
-
-<td>
-2026/07/22
-</td>
-
-</tr>
-
-
-
-
-
-<tr>
-
-<td>
-
-<a class="thread-title"
-href="#">
-
-關於案件公開資料版本差異
-
-</a>
-
-</td>
-
-<td>
-DataCheck
-</td>
-
-<td>
-2026/07/20
-</td>
-
-</tr>
-
-
-
-
-</table>
-
-
-
-
-
-
-<div class="info">
-
-
-目前會員：
-5483 人
-
-<br>
-
-今日發文：
-36 篇
-
-<br>
-
-本站成立：
-2010 年
-
-<br>
-
-資料同步：
-2026/07/23
-
-</div>
-
-
-
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<footer>
-
-
-刑案觀察站 Case Watch © 2026
-
-
-</footer>
-
-
-
-
-</body>
-
-</html>
+<div class="main">

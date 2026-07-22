@@ -4,13 +4,9 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-<title>
-證物分析區｜刑案觀察站
-</title>
+<title>證物分析區｜刑案觀察站</title>
 
 
 <style>
@@ -19,279 +15,217 @@
 box-sizing:border-box;
 }
 
-
 body{
-
 margin:0;
-
 background:#e9e9e9;
-
 color:#333;
-
-font-family:
-"Verdana",
-"Microsoft JhengHei",
-sans-serif;
-
+font-family:"Verdana","Microsoft JhengHei",sans-serif;
 font-size:14px;
-
 }
 
 
-
 header{
-
 background:#fff;
-
 border-bottom:1px solid #ccc;
-
 padding:25px 0;
-
 }
 
 
 .header-inner{
-
-width:980px;
-
+width:1000px;
 max-width:90%;
-
 margin:auto;
-
 text-align:center;
-
 }
 
 
 .logo{
-
 font-size:34px;
-
 font-weight:bold;
-
 letter-spacing:4px;
-
 }
 
 
 .subtitle{
-
 font-size:13px;
-
 color:#777;
-
 margin-top:8px;
-
 }
 
 
-
-
 nav{
-
 background:#3b4a5a;
-
 }
 
 
 .nav-inner{
-
-width:980px;
-
+width:1000px;
 max-width:90%;
-
 margin:auto;
-
 text-align:center;
-
 }
 
 
 nav a{
-
 display:inline-block;
-
 padding:12px 22px;
-
 color:white;
-
 text-decoration:none;
-
 }
 
 
 nav a:hover{
-
 background:#596d82;
-
 }
-
 
 
 
 .container{
-
-width:980px;
-
+width:1000px;
 max-width:90%;
-
 margin:25px auto;
-
+display:flex;
+gap:20px;
 }
 
 
 
 
-
-.box{
-
+.side{
+width:260px;
 background:white;
-
 border:1px solid #ccc;
-
-margin-bottom:18px;
-
+flex-shrink:0;
 }
 
 
-
-
-
-.box-title{
-
+.side-title{
 background:#f2f2f2;
-
-border-bottom:1px solid #ccc;
-
 padding:12px;
-
 font-size:16px;
-
 font-weight:bold;
-
+border-bottom:1px solid #ccc;
 }
 
 
-
-
-
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
+.side ul{
+list-style:none;
+padding:0;
+margin:0;
 }
 
 
-
-th{
-
-background:#fafafa;
-
-border-bottom:1px solid #ddd;
-
-padding:10px;
-
-text-align:left;
-
-}
-
-
-
-td{
-
-padding:12px;
-
+.side li{
+padding:14px;
 border-bottom:1px solid #eee;
-
 }
 
 
-
-
-
+.side a,
 a{
-
 color:#0066cc;
-
 text-decoration:none;
-
 }
 
 
+.side a:hover,
 a:hover{
-
 text-decoration:underline;
-
 }
 
 
 
 .small{
-
 font-size:12px;
-
 color:#888;
-
+line-height:1.5;
+margin-top:5px;
 }
 
 
 
+.main{
+flex:1;
+}
+
+
+
+.box{
+background:white;
+border:1px solid #ccc;
+margin-bottom:18px;
+}
+
+
+
+.box-title{
+background:#f2f2f2;
+padding:12px;
+font-size:16px;
+font-weight:bold;
+border-bottom:1px solid #ccc;
+}
+
+
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+
+
+th{
+background:#fafafa;
+padding:10px;
+text-align:left;
+border-bottom:1px solid #ddd;
+}
+
+
+td{
+padding:12px;
+border-bottom:1px solid #eee;
+}
+
+
 
 footer{
-
-width:980px;
-
+width:1000px;
 max-width:90%;
-
 margin:30px auto;
-
 padding:20px;
-
 text-align:center;
-
-color:#888;
-
 font-size:12px;
-
+color:#888;
 border-top:1px solid #ccc;
-
 }
 
 
 </style>
 
-
 </head>
+
 
 
 <body>
 
 
-
 <header>
-
 
 <div class="header-inner">
 
-
 <div class="logo">
-
 刑案觀察站
-
 </div>
 
 
 <div class="subtitle">
-
 Case Watch ｜ 民間案件討論平台
-
 </div>
 
 
 </div>
-
 
 </header>
 
@@ -299,7 +233,6 @@ Case Watch ｜ 民間案件討論平台
 
 
 <nav>
-
 
 <div class="nav-inner">
 
@@ -326,12 +259,149 @@ Case Watch ｜ 民間案件討論平台
 
 </div>
 
-
 </nav>
 
 
 
+
+
 <div class="container">
+
+
+
+<div class="side">
+
+
+<div class="side-title">
+版面分類
+</div>
+
+
+
+<ul>
+
+
+<li>
+<a href="unsolved.html">
+未解案件
+</a>
+
+<div class="small">
+失蹤案件、懸案與長期未破案件整理
+</div>
+
+</li>
+
+
+
+<li>
+<a href="crime.html">
+重大刑案
+</a>
+
+<div class="small">
+重大案件、司法紀錄與時間線分析
+</div>
+
+</li>
+
+
+
+
+<li>
+<a href="evidence.html">
+證物分析
+</a>
+
+<div class="small">
+文件、影像、錄音與物證資料整理
+</div>
+
+</li>
+
+
+
+
+<li>
+<a href="identity.html">
+身份調查
+</a>
+
+<div class="small">
+人物背景與關係資料分析
+</div>
+
+</li>
+
+
+
+
+<li>
+<a href="#">
+新聞整理
+</a>
+
+<div class="small">
+案件相關新聞彙整
+</div>
+
+</li>
+
+
+
+
+<li>
+<a href="#">
+資料交流
+</a>
+
+<div class="small">
+會員資料交流討論
+</div>
+
+</li>
+
+
+</ul>
+
+
+
+
+
+<div class="side-title">
+站務資訊
+</div>
+
+
+<ul>
+
+<li>
+<a href="#">
+站規與公告
+</a>
+</li>
+
+
+<li>
+<a href="#">
+回報問題
+</a>
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="main">
+
 
 
 <div class="box">
@@ -347,23 +417,71 @@ Case Watch ｜ 民間案件討論平台
 
 <table>
 
+<tr>
+
+<td>
+
+
+<b>
+證物資料與分析集中區
+</b>
+
+
+<br><br>
+
+
+本版收錄案件相關文件、照片、
+錄音、影像與公開物證資料分析。
+
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+證物討論串
+
+</div>
+
+
+
+
+<table>
+
 
 <tr>
 
 <th>
-資料名稱
+主題
 </th>
 
 <th>
-類型
+作者
 </th>
 
 <th>
-討論
+回覆
 </th>
 
 <th>
-更新時間
+最後更新
 </th>
 
 </tr>
@@ -380,7 +498,7 @@ Case Watch ｜ 民間案件討論平台
 
 <a href="thread-e004.html">
 
-E-004補充調查文件是否曾存在？
+【E-004】第十三號證物是否曾存在？
 
 </a>
 
@@ -390,7 +508,7 @@ E-004補充調查文件是否曾存在？
 
 <span class="small">
 
-CASE-2017-0908 第十三號證物相關討論
+文件編號、封存紀錄與公開版本比對
 
 </span>
 
@@ -400,7 +518,7 @@ CASE-2017-0908 第十三號證物相關討論
 
 <td>
 
-文件紀錄
+EvidenceHunter
 
 </td>
 
@@ -427,6 +545,7 @@ CASE-2017-0908 第十三號證物相關討論
 
 
 
+
 <tr>
 
 
@@ -435,7 +554,7 @@ CASE-2017-0908 第十三號證物相關討論
 
 <a href="#">
 
-CASE-2018-0419 現場照片編號異常
+【CASE-2018-0419】現場照片編號異常
 
 </a>
 
@@ -445,7 +564,7 @@ CASE-2018-0419 現場照片編號異常
 
 <span class="small">
 
-照片時間與公開紀錄比對
+照片時間與案件紀錄分析
 
 </span>
 
@@ -455,7 +574,7 @@ CASE-2018-0419 現場照片編號異常
 
 <td>
 
-影像資料
+PhotoLab
 
 </td>
 
@@ -482,6 +601,7 @@ CASE-2018-0419 現場照片編號異常
 
 
 
+
 <tr>
 
 
@@ -500,7 +620,7 @@ CASE-2018-0419 現場照片編號異常
 
 <span class="small">
 
-音檔真實性與取得方式分析
+音檔真實性與取得方式討論
 
 </span>
 
@@ -510,7 +630,7 @@ CASE-2018-0419 現場照片編號異常
 
 <td>
 
-錄音證物
+AudioCheck
 
 </td>
 
@@ -533,67 +653,10 @@ CASE-2018-0419 現場照片編號異常
 
 
 
-
-
-
-
-<tr>
-
-
-<td>
-
-
-<a href="#">
-
-封存文件版本差異整理
-
-</a>
-
-
-<br>
-
-
-<span class="small">
-
-公開版與舊版資料比對
-
-</span>
-
-
-</td>
-
-
-<td>
-
-文件分析
-
-</td>
-
-
-<td>
-
-42
-
-</td>
-
-
-<td>
-
-2026/07/11
-
-</td>
-
-
-</tr>
-
-
-
 </table>
 
 
-
 </div>
-
 
 
 
@@ -607,10 +670,9 @@ CASE-2018-0419 現場照片編號異常
 
 <div class="box-title">
 
-分析資料庫
+資料庫統計
 
 </div>
-
 
 
 
@@ -619,37 +681,11 @@ CASE-2018-0419 現場照片編號異常
 
 <tr>
 
+
 <td>
 
 
-本區主要整理：
-
-<br><br>
-
-
-・案件相關文件
-
-<br>
-
-・照片與影像紀錄
-
-<br>
-
-・錄音資料
-
-<br>
-
-・物證編號變化
-
-<br>
-
-・公開資料差異
-
-
-<br><br>
-
-
-目前整理資料：
+證物資料：
 
 <b>
 1,263
@@ -658,10 +694,10 @@ CASE-2018-0419 現場照片編號異常
 項
 
 
-<br>
+<br><br>
 
 
-公開分析文章：
+分析文章：
 
 <b>
 542
@@ -670,64 +706,13 @@ CASE-2018-0419 現場照片編號異常
 篇
 
 
-</td>
-
-
-</tr>
-
-
-</table>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="box">
-
-
-<div class="box-title">
-
-討論規範
-
-</div>
-
-
-
-<table>
-
-
-<tr>
-
-
-<td>
-
-
-證物分析以公開資訊比對為主。
-
 <br><br>
 
 
-禁止：
+最後更新：
 
-<br>
-
-・偽造證物
-
-<br>
-
-・散播未公開文件
-
-<br>
-
-・冒充案件相關人員
+<b>
+2026/07/23</b>
 
 
 </td>
@@ -744,11 +729,11 @@ CASE-2018-0419 現場照片編號異常
 
 
 
+</div>
 
 
 
 </div>
-
 
 
 
@@ -759,7 +744,6 @@ CASE-2018-0419 現場照片編號異常
 刑案觀察站 Case Watch © 2026
 
 </footer>
-
 
 
 
